@@ -9,7 +9,8 @@ export default function Form(){
             email: '',
             comments: '',
             isFriendly: true,
-            employment: ''
+            employment: '',
+            favColor:''
         }
     )
 
@@ -23,8 +24,13 @@ export default function Form(){
         })
     }
 
+    function handleSubmit(event){
+        event.preventDefault()
+        console.log(formData);
+    }
+
     return(
-        <form action="">
+        <form onSubmit={handleSubmit}>
             <input 
                 type="text"
                 placeholder="First Name"
@@ -37,13 +43,13 @@ export default function Form(){
                 type="text"
                 placeholder="Last Name"
                 onChange={handleChange}
-                name="LastName"
+                name="lastName"
                 value={formData.lastName}
             />
             
             <input 
                 type="email"
-                placeholder="E-mail"
+                placeholder="E-mail" 
                 onChange={handleChange}
                 name="email"
                 value={formData.email}
@@ -105,7 +111,13 @@ export default function Form(){
 
             <label htmlFor="favColor">What is your favorite color?</label>
             <br />
-            <select id="favColor">
+            <select 
+                id="favColor"
+                value={formData.favColor}
+                onChange={handleChange}
+                name="favColor"
+            >
+                <option value="">-- Choose --</option>
                 <option value="red">Red</option>
                 <option value="orange">Orange</option>
                 <option value="yellow">Yellow</option>
@@ -114,6 +126,9 @@ export default function Form(){
                 <option value="indigo">Indigo</option>
                 <option value="violet">Violet</option>
             </select>
+
+            <br />
+            <button>Submit</button>
         </form>
     )
 
