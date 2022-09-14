@@ -9,6 +9,52 @@ body{
     padding: 20px;
 }
 
+
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Pinyon+Script&display=swap');
+
+
+    .header{
+        height:30vh;
+        background: #1c2834;
+        background-size:cover;
+        background-position:top;
+        position:relative;
+        background-attachment: fixed;
+    }
+
+    .header__text-box{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        text-align:center
+    }
+
+    
+    body .heading-primary{
+        color:#fff;
+        text-transform:uppercase;
+        -webkit-backface-visibility:hidden;
+        backface-visibility:hidden;
+        margin-bottom:6rem
+    }
+    
+    body .heading-primary--sub{
+        display:block;
+        font-size:2rem;
+        font-weight:700;
+        letter-spacing:1.75rem;
+        -webkit-animation-name:moveInRight;
+        animation-name:moveInRight;
+        -webkit-animation-duration:2.5s;
+        animation-duration:2.5s
+    }
+    
+
+.formF{
+    padding-left: 50px;
+}
+
 input{
     margin-bottom: 15px;
     height: 30px;
@@ -33,4 +79,14 @@ textarea{
     background-color: grey;
     text-align: center;
     padding: 20px;
+}
+
+.formbtn{
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(50, 37, 37);
+    border: none;   
+    cursor: pointer;
 }

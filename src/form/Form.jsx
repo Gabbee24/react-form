@@ -30,7 +30,7 @@ export default function Form(){
     }
 
     return(
-        <form onSubmit={handleSubmit}>
+        <form className="formF" onSubmit={handleSubmit}>
             <input 
                 type="text"
                 placeholder="First Name"
@@ -128,7 +128,7 @@ export default function Form(){
             </select>
 
             <br />
-            <button>Submit</button>
+            <button className="formbtn">Submit</button>
         </form>
     )
 
