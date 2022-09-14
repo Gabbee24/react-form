@@ -4,17 +4,12 @@
     padding: 0;
 }
 
-body{
-    margin: 0;
-    padding: 20px;
-}
-
 
 @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Pinyon+Script&display=swap');
 
 
     .header{
-        height:30vh;
+        height:180px;
         background: #1c2834;
         background-size:cover;
         background-position:top;
@@ -71,16 +66,6 @@ textarea{
     display: block;
 }
 
-.footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: grey;
-    text-align: center;
-    padding: 20px;
-}
-
 .formbtn{
     width: 50%;
     padding: 10px;
@@ -89,4 +74,14 @@ textarea{
     background-color: rgb(50, 37, 37);
     border: none;   
     cursor: pointer;
+}
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+    text-align: center;
+    padding: 20px;
 }
