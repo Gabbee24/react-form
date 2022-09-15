@@ -67,11 +67,12 @@ textarea{
 }
 
 .formbtn{
-    width: 50%;
+    width: 98%;
     padding: 10px;
     border-radius: 5px;
     color: white;
-    background-color: rgb(50, 37, 37);
+    background: #1c2834;
+    background-size:cover;
     border: none;   
     cursor: pointer;
 }

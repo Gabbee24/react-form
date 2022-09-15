@@ -109,7 +109,7 @@ export default function Form(){
             </fieldset>
             <br />
 
-            <label htmlFor="favColor">What is your favorite color?</label>
+            <label htmlFor="favColor">Path of training</label>
             <br />
             <select 
                 id="favColor"
@@ -118,13 +118,13 @@ export default function Form(){
                 name="favColor"
             >
                 <option value="">-- Choose --</option>
-                <option value="red">Red</option>
-                <option value="orange">Orange</option>
-                <option value="yellow">Yellow</option>
-                <option value="green">Green</option>
-                <option value="blue">Blue</option>
-                <option value="indigo">Indigo</option>
-                <option value="violet">Violet</option>
+                <option value="red">Digital Literacy</option>
+                <option value="orange">Graphics Design</option>
+                <option value="yellow">Web development</option>
+                <option value="green">Data Science</option>
+                <option value="blue">Sofftware Engineering</option>
+                <option value="indigo">IT Security</option>
+                <option value="violet">DBMS</option>
             </select>
 
             <br />
